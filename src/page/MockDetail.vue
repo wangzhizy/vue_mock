@@ -8,10 +8,10 @@
       <el-form-item label="描述:" prop="mockDesc">
         <el-input v-model="data.mock.mockDesc" placeholder="请输入Mock描述"></el-input>
       </el-form-item>
-      <el-form-item label="组ID:" prop="mockGroupId">
+      <el-form-item label="组ID:" prop="mockGroupId" hidden='true'>
         <el-input v-model="data.mock.mockGroupId" placeholder="输入可标记组"></el-input>
       </el-form-item>
-      <el-form-item label="组描述:" prop="mockGroupDesc">
+      <el-form-item label="组描述:" prop="mockGroupDesc" hidden='true'>
         <el-input v-model="data.mock.mockGroupDesc" type="textarea" placeholder="请输入组描述"></el-input>
       </el-form-item>
       <el-form-item label="返回值:">

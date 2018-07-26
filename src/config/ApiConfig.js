@@ -1,4 +1,4 @@
-export const BASEURL = "http://localhost:8080"
+export const BASEURL = "http://58.87.124.224:8080"
 
 //登录
 export const API_SIGNIN = "/wangzhi/user/login"
