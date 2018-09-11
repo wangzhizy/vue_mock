@@ -1,4 +1,5 @@
 export const BASEURL = "http://58.87.124.224:8080"
+// export const BASEURL = "http://192.168.110.181:8080"
 
 //登录
 export const API_SIGNIN = "/wangzhi/user/login"
@@ -24,3 +25,5 @@ export const API_RESPONSEDETAIL = "/wangzhi/mock/response/detail"
 export const API_RESPONSESAVE = "/wangzhi/mock/response/save"
 //删除返回值
 export const API_RESPONSEDELETE = "/wangzhi/mock/response/delete"
+//sms列表
+export const API_GETSMS = "/wangzhi/sms/get"

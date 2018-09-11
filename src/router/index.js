@@ -7,6 +7,7 @@ import MockList from '~/page/MockList'
 import MockDetail from "~/page/MockDetail"
 import ResponseDetail from "~/page/ResponseDetail"
 import Setting from "~/page/Setting"
+import SmsList from "~/page/SmsList"
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
       path: "/Setting",
       name: "Setting",
       component: Setting
+    },
+    {
+      path: "/SmsList",
+      name: "SmsList",
+      component: SmsList
     }
   ]
 })
