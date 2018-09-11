@@ -1,7 +1,7 @@
 <template>
     <div class="w100">
         <el-card class="w100 smsText" v-for="(item,index) in smsList" :key="index">
-            {{item.body}}}
+            {{item.body}}
         </el-card>
     </div>
 </template>
