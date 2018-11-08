@@ -2,7 +2,7 @@
     <div>
         <MainHeader/>
         <el-form ref="responseForm" :model="response" label-width="130px"  :rules="rules" class="bgWhite m20 p50">
-            <el-form-item label="标识:" prop="responseTag">
+            <el-form-item label="标识:" prop="responseTag" hidden='true'>
                 <el-input v-model="response.responseTag" placeholder="请输入标识"></el-input>
             </el-form-item>
             <el-form-item label="描述:" prop="responseDesc">
@@ -39,7 +39,7 @@ export default {
       response: {},
       rules: {
         responseTag: [
-          { required: true, message: "请输入标识", trigger: "blur" }
+          { required: false, message: "请输入标识", trigger: "blur" }
         ]
       }
     };
@@ -119,7 +119,7 @@ export default {
           responseId: sessionStorage.responseId,
           projectId: sessionStorage.projectId,
           mockId: sessionStorage.mockId,
-          responseTag: this.response.responseTag,
+          // responseTag: "this.response.responseTag",
           responseDesc: this.response.responseDesc,
           response: encodeURIComponent(this.response.responsePath)
         },

@@ -1,6 +1,6 @@
 <template>
   <div class="main wh100">
-    <div class="text1 p10 float-r" style="color:#fff" v-on:click="setting">设置</div>
+    <div class="text1 p10 float-r" style="color:#fff" v-on:click="setting" hidden='true'>设置</div>
     <img :src="imgPath" alt="MOCK" class="mockImg centerH p100 clear"  />
     <div class="w300p centerH">
       <el-input type="text" v-model="userName" placeholder="用户名，没有会自动注册哦" clearable></el-input>
